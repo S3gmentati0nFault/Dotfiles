@@ -6,3 +6,4 @@ coc/
 
 # Files
 programs.sh
+.zcompdump-*

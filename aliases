@@ -1,6 +1,7 @@
 # FileSystem Aliases
 alias ..="cd .."
 alias rar="~/rar"
+alias mybook='cd ../../mnt/myBook'
 # Project aliases
 alias ml="cd ~/Projects/AppuntiMachineLearningOsi"
 alias cct="cd ~/Projects/cloudy-notes"

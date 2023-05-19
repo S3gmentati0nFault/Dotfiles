@@ -2,7 +2,7 @@
 coc/
 .vim/bundle/
 .vim/colors/
-
+.zsh_sessions/
 
 # Files
 programs.sh

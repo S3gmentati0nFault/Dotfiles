@@ -2,7 +2,7 @@ call plug#begin()
 Plug 'nvim-lua/completion-nvim'
 call plug#end()
 
-
+XDG_CONFIG_HOME=$ZDOTDIR/init.vim
 
 set nocompatible
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.

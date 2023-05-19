@@ -2,6 +2,8 @@ call plug#begin()
 	Plug 'neoclide/coc.nvim',{'branch':'release'}
 call plug#end()
 
+source $ZDOTDIR/init.vim
+
 " coc.nvim configuration
 let g:coc_global_extensions = ['coc-sh', 'coc-html', 'coc-css', 'coc-json', 'coc-tsserver', 'coc-emmet', 'coc-java']
 " Use <Tab> to trigger autocompletion.

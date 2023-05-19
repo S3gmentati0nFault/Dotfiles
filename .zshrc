@@ -10,10 +10,10 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="adben"
 
 # zsh plugins
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting zsh-completions)
+plugins=(git)
 
 # External files
-source $HOME/Projects/.files/imports.sh
+source $HOME/Projects/.files/imports
 
 # PATH variables
 export PATH="/usr/local/opt/libarchive/bin:/usr/local/lib/node_modules:$PATH"
@@ -29,4 +29,7 @@ eval "$(navi widget zsh)"
 
 # Terminal initialization
 clear
-setxkbmap us -variant alt-intl
+if command -v setxkbmap -help >/dev/null 2>&1; then
+	echo "setting us variant"
+	setxkbmap us -variant alt-intl
+fi

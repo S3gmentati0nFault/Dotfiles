@@ -21,4 +21,4 @@ alias hist="nvim $ZDOTDIR/.zsh_history"
 alias mqtt="nvim /usr/local/etc/mosquitto/mosquitto.conf"
 
 # Command aliases
-alias zsh="cd && zsh"
+alias zsh="source $ZDOTDIR/.zshrc && clear"

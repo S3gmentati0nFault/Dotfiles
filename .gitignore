@@ -7,3 +7,4 @@ coc/
 # Files
 programs.sh
 .zcompdump-*
+.zsh_history

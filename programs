@@ -1,0 +1,28 @@
+# Clion 
+CLION="/home/heart-of-gold/Programmi/clion/bin/"
+
+function clion(){
+	echo "Launching Clion..."
+	cd $CLION
+	./clion.sh
+	cd
+}
+
+# GoLand
+GOLAND="/home/heart-of-gold/Programmi/goland/bin/"
+
+function goland(){
+	echo "Launching GoLand..."
+	cd $GOLAND
+	./goland.sh
+	cd
+}
+
+# Intellij
+INTELLIJ="$HOME/Programmi/intelliJ/bin"
+
+function intellij(){
+	echo "Launching IntelliJ..."
+	$INTELLIJ/idea.sh
+}
+

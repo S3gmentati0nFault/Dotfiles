@@ -11,7 +11,7 @@ alias rnd="cd ~/Projects/random-utilities"
 alias curriculum="cd ~/Projects/curriculum"
 alias cs="cd ~/Projects/Coherent-Hashing"
 alias folio="cd ~/Projects/Portfolio"
-alias dots="cd ~/Projects/.files"
+alias dots="cd ~/Projects/dotfiles"
 
 # Configuration Aliases
 alias zshrc="nvim $ZDOTDIR/.zshrc"

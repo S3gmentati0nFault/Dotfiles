@@ -13,7 +13,7 @@ ZSH_THEME="adben"
 plugins=(git)
 
 # External files
-source $HOME/Projects/.files/imports
+source $HOME/Projects/dotfiles/imports
 
 # PATH variables
 export PATH="/usr/local/opt/libarchive/bin:/usr/local/lib/node_modules:$PATH"

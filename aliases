@@ -16,7 +16,7 @@ alias dots="cd ~/Projects/dotfiles"
 # Configuration Aliases
 alias zshrc="nvim $ZDOTDIR/.zshrc"
 alias aliases="nvim $ZDOTDIR/aliases"
-alias imports="nvim $ZDOTDIR/imports"
+alias imports="nvim $ZDOTDIR/imports.sh"
 alias hist="nvim $ZDOTDIR/.zsh_history"
 alias mqtt="nvim /usr/local/etc/mosquitto/mosquitto.conf"
 

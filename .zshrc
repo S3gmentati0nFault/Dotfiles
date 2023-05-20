@@ -13,7 +13,7 @@ ZSH_THEME="adben"
 plugins=(git)
 
 # External files
-source $HOME/Projects/dotfiles/imports
+source $HOME/Projects/dotfiles/imports.sh
 
 # PATH variables
 export PATH="/usr/local/opt/libarchive/bin:/usr/local/lib/node_modules:$PATH"
@@ -28,8 +28,8 @@ export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 eval "$(navi widget zsh)"
 
 # Terminal initialization
-clear
-if command -v setxkbmap -help >/dev/null 2>&1; then
+if [ $(hostname) = "Marvin" ]; then
 	echo "setting us variant"
 	setxkbmap us -variant alt-intl
 fi
+clear

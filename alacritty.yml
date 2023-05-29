@@ -1,5 +1,6 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
-
+import:
+  - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
@@ -10,7 +11,7 @@ env:
   # each instance of Alacritty. If it is not present, alacritty will
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
-  TERM: alacritty
+  TERM: xterm-256color
   LANG: "en_US.UTF-8"
   LC_CTYPE: en_US.UTF-8
   #window:
@@ -18,7 +19,7 @@ env:
   #
   # Specified in floating number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  #opacity: 1.0
+  opacity: '0.9'
   # Window dimensions (changes require restart)
   #
   # Specified in number of columns/lines, not pixels.
@@ -86,47 +87,44 @@ env:
 # Font configuration
 font:
   # Normal (roman) font face
-  normal:
-    # Font family
-    #
-    # Default:
-    #   - (macOS) Menlo
-    #   - (Linux/BSD) monospace
-    #   - (Windows) Consolas
-    family: "monospace"
-
-    # The `style` can be specified to pick a specific face.
-    style: Regular
-    # Bold font face
-    #bold:
-    # Font family
-    #
-    # If the bold family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
-    # The `style` can be specified to pick a specific face.
-    #style: Bold
-    # Italic font face
-    #italic:
-    # Font family
-    #
-    # If the italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
-    # The `style` can be specified to pick a specific face.
-    #style: Italic
-    # Bold italic font face
-    #bold_italic:
-    # Font family
-    #
-    # If the bold italic family is not specified, it will fall back to the
-    # value specified for the normal font.
-    #family: monospace
-    # The `style` can be specified to pick a specific face.
-    #style: Bold Italic
-
+  #normal:
+  #Font family
+  #Default:
+  #   - (macOS) monospace
+  #   - (Linux/BSD) monospace
+  #   - (Windows) Consolas
+  #family: "monospace"
+  # The `style` can be specified to pick a specific face.
+  #style: Regular
+  # Bold font face
+  #bold:
+  # Font family
+  #
+  # If the bold family is not specified, it will fall back to the
+  # value specified for the normal font.
+  #family: monospace
+  # The `style` can be specified to pick a specific face.
+  #style: Bold
+  # Italic font face
+  #italic:
+  # Font family
+  #
+  # If the italic family is not specified, it will fall back to the
+  # value specified for the normal font.
+  #family: monospace
+  # The `style` can be specified to pick a specific face.
+  #style: Italic
+  # Bold italic font face
+  #bold_italic:
+  # Font family
+  #
+  # If the bold italic family is not specified, it will fall back to the
+  # value specified for the normal font.
+  #family: monospace
+  # The `style` can be specified to pick a specific face.
+  #style: Bold Italic
   # Point size
-  size: 11.0
+  size: 13.0
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   #offset:
@@ -144,54 +142,80 @@ font:
 # Colors (Tomorrow Night Bright)
 colors:
   primary:
-    background: '#282a36'
-    foreground: '#f8f8f2'
-    bright_foreground: '#ffffff'
+    background: "#1E1E2E" # base
+    foreground: "#CDD6F4" # text
+    # Bright and dim foreground colors
+    dim_foreground: "#CDD6F4" # text
+    bright_foreground: "#CDD6F4" # text
+
+  # Cursor colors
   cursor:
-    text: CellBackground
-    cursor: CellForeground
+    text: "#1E1E2E" # base
+    cursor: "#F5E0DC" # rosewater
   vi_mode_cursor:
-    text: CellBackground
-    cursor: CellForeground
+    text: "#1E1E2E" # base
+    cursor: "#B4BEFE" # lavender
+
+  # Search colors
   search:
     matches:
-      foreground: '#44475a'
-      background: '#50fa7b'
+      foreground: "#1E1E2E" # base
+      background: "#A6ADC8" # subtext0
     focused_match:
-      foreground: '#44475a'
-      background: '#ffb86c'
+      foreground: "#1E1E2E" # base
+      background: "#A6E3A1" # green
     footer_bar:
-      background: '#282a36'
-      foreground: '#f8f8f2'
+      foreground: "#1E1E2E" # base
+      background: "#A6ADC8" # subtext0
+
+  # Keyboard regex hints
   hints:
     start:
-      foreground: '#282a36'
-      background: '#f1fa8c'
+      foreground: "#1E1E2E" # base
+      background: "#F9E2AF" # yellow
     end:
-      foreground: '#f1fa8c'
-      background: '#282a36'
-  line_indicator:
-    foreground: None
-    background: None
+      foreground: "#1E1E2E" # base
+      background: "#A6ADC8" # subtext0
+
+  # Selection colors
   selection:
-    text: CellForeground
-    background: '#44475a'
+    text: "#1E1E2E" # base
+    background: "#F5E0DC" # rosewater
+
+  # Normal colors
   normal:
-    black: '#21222c'
-    red: '#ff5555'
-    green: '#50fa7b'
-    yellow: '#f1fa8c'
-    blue: '#bd93f9'
-    magenta: '#ff79c6'
-    cyan: '#8be9fd'
-    white: '#f8f8f2'
+    black: "#45475A" # surface1
+    red: "#F38BA8" # red
+    green: "#A6E3A1" # green
+    yellow: "#F9E2AF" # yellow
+    blue: "#89B4FA" # blue
+    magenta: "#F5C2E7" # pink
+    cyan: "#94E2D5" # teal
+    white: "#BAC2DE" # subtext1
+
+  # Bright colors
   bright:
-    black: '#6272a4'
-    red: '#ff6e6e'
-    green: '#69ff94'
-    yellow: '#ffffa5'
-    blue: '#d6acff'
-    magenta: '#ff92df'
-    cyan: '#a4ffff'
-    white: '#ffffff'
-theme: Dracula
+    black: "#585B70" # surface2
+    red: "#F38BA8" # red
+    green: "#A6E3A1" # green
+    yellow: "#F9E2AF" # yellow
+    blue: "#89B4FA" # blue
+    magenta: "#F5C2E7" # pink
+    cyan: "#94E2D5" # teal
+    white: "#A6ADC8" # subtext0
+
+  # Dim colors
+  dim:
+    black: "#45475A" # surface1
+    red: "#F38BA8" # red
+    green: "#A6E3A1" # green
+    yellow: "#F9E2AF" # yellow
+    blue: "#89B4FA" # blue
+    magenta: "#F5C2E7" # pink
+    cyan: "#94E2D5" # teal
+    white: "#BAC2DE" # subtext1
+
+  indexed_colors:
+    - { index: 16, color: "#FAB387" }
+    - { index: 17, color: "#F5E0DC" }
+theme: Mocha

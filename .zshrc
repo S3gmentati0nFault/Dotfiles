@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$HOME/External_projects/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -16,7 +16,7 @@ plugins=(git)
 source $HOME/Projects/dotfiles/imports.sh
 
 # PATH variables
-export PATH="/usr/local/opt/libarchive/bin:/usr/local/lib/node_modules:$PATH"
+export PATH="/usr/local/opt/libarchive/bin:/usr/local/lib/node_modules:$HOME/External_projects/alacritty/target/release/:$PATH"
 
 # Eliminate the ugly background for ow folders
 export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"

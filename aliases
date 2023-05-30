@@ -15,7 +15,9 @@ alias dots="cd ~/Projects/dotfiles"
 
 # Configuration Aliases
 alias zshrc="nvim $ZDOTDIR/.zshrc"
-alias alarc="nvim ~/.config/alacritty/alacritty.yml"
+alias alarc="nvim $ZDOTDIR/alacritty.yml"
+alias wmrc="nvim $ZDOTDIR/i3/config"
+alias polyrc="nvim $ZDOTDIR/polybar/config.ini"
 alias aliases="nvim $ZDOTDIR/aliases"
 alias imports="nvim $ZDOTDIR/imports.sh"
 alias hist="nvim $ZDOTDIR/.zsh_history"

@@ -3,15 +3,14 @@ alias ..="cd .."
 alias rar="~/rar"
 alias mybook='cd ../../mnt/myBook'
 # Project aliases
-alias ml="cd ~/Projects/AppuntiMachineLearningOsi"
-alias cct="cd ~/Projects/cloudy-notes"
-alias dsp="cd ~/Projects/lab_dsp"
+alias cct="cd ~/Projects/Cloudy-notes"
+alias dsp="cd ~/Projects/Lab-dsp"
 alias grn="cd ~/Projects/Greenfield"
-alias rnd="cd ~/Projects/random-utilities"
-alias curriculum="cd ~/Projects/curriculum"
+alias rnd="cd ~/Projects/Random-utilities"
+alias curriculum="cd ~/Projects/Curriculum"
 alias cs="cd ~/Projects/Coherent-Hashing"
 alias folio="cd ~/Projects/Portfolio"
-alias dots="cd ~/Projects/dotfiles"
+alias dots="cd ~/Projects/Dotfiles"
 
 # Configuration Aliases
 alias zshrc="nvim $ZDOTDIR/.zshrc"

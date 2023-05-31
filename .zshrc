@@ -13,7 +13,7 @@ ZSH_THEME="bigi"
 plugins=(git)
 
 # External files
-source $HOME/Projects/dotfiles/imports.sh
+source $HOME/Projects/Dotfiles/imports.sh
 
 # PATH variables
 export PATH="/usr/local/opt/libarchive/bin:/usr/local/lib/node_modules:$HOME/External_projects/alacritty/target/release/:$PATH"

@@ -179,5 +179,6 @@ bindsym $mod+r mode "resize"
 #        status_command i3status
 #}
 
+exec xrandr --output DVI-D-0 --mode 1920x1080 --rate 144.00 
 exec_always --no-startup-id ~/.config/i3/polybar.sh & 
 exec --no-startup-id ~/.fehbg &

@@ -19,7 +19,7 @@ function goland(){
 }
 
 # Intellij
-INTELLIJ="$HOME/Programmi/intelliJ/bin"
+INTELLIJ="$HOME/Programs/Intellij/bin"
 
 function intellij(){
 	echo "Launching IntelliJ..."
